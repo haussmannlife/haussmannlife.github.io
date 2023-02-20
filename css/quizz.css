@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Labrada:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#grid_question {
+    display: grid;
+    column-gap: 5px;
+    row-gap: 15px;
+    text-align: center;
+    width:80%;
+    height:300px;
+    
+    /*background: red;
+    */
+    margin-left: 10%;
+    margin-top: 100px;
+}
+
+#question {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#rep1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#rep2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width:100%;
+    /*background: blueviolet;
+    */
+}
+
+#image1 {
+    width:0px;
+    height:0px;
+}
+#ornement {
+    width: 74px;
+    position:absolute;
+    margin-left: -36px;
+    margin-top: 30px;
+}
+
+
+#question h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    padding-bottom: 11px;
+}
+
+.q_span {
+    opacity: 100%;
+    animation: question 1.3s;
+    animation-fill-mode: forwards;  
+}
+
+.q_span:nth-child(1){
+    opacity: 0;
+    animation-delay: 0s;
+}
+.q_span:nth-child(2){
+    opacity: 0;
+    animation-delay: .12s;
+}
+.q_span:nth-child(3){
+    opacity: 0;
+    animation-delay: .24s;
+}
+.q_span:nth-child(4){
+    opacity: 0;
+    animation-delay: .36s;
+}
+.q_span:nth-child(5){
+    opacity: 0;
+    animation-delay: .48s;
+}
+.q_span:nth-child(6){
+    opacity: 0;
+    animation-delay: .6s;
+}
+.q_span:nth-child(7){
+    opacity: 0;
+    animation-delay: .72s;
+}
+.q_span:nth-child(8){
+    opacity: 0;
+    animation-delay: .84s;
+}
+.q_span:nth-child(9){
+    opacity: 0;
+    animation-delay: .96s;
+}
+@keyframes question {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+#question h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 21px;
+    animation: question_sentence 1s;
+    animation-fill-mode: forwards;
+    transform: translateY(30px);
+    animation-delay: 1.5s;
+    opacity: 0;
+}
+
+@keyframes question_sentence {
+    0% {transform: translateY(30px);}
+    100% {transform: translateY(0px); opacity: 1;}
+}
+
+#score {
+    padding-top: 2px;
+    font-style: italic;
+    animation: question 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+
+/* CSS */
+.button-89 {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 25px;
+
+  border: 0;
+  font-family: 'Cormorant Garamond', serif;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+.bt_anim {
+    opacity: 0%;
+    animation: appear_bt 2s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes appear_bt {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+
+@media only screen  and (max-device-width: 480px) {
+    body { 
+        /*background: blue;*/
+    }
+    #ornement {
+        opacity: 1;
+        margin-top: -50px;
+        margin-left: -36px;
+    }
+    #rep1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding-bottom: 20px;
+    }
+    #rep2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        padding-top: 40px;
+        width:100%;
+        /*background: blueviolet;
+        */
+    }
+    .button-89 {
+        font-size: 60px;
+    }
+    #question h1 {
+        font-size: 72px;
+        padding-bottom: 15px;
+    }
+    #question h3 {
+        font-size: 50px;
+    }
+    #image1 {
+        width:100%;
+        height:0px;
+    }
+
+}
