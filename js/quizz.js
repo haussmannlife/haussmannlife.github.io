@@ -22,6 +22,22 @@ function set_index(new_number){
 set_index(0)
 index=get_index()
 
+function wrong_answer(){
+    //alert('FAUX')
+    body = document.getElementsByTagName('body')[0]
+    body.style.animation = 'none';
+    body.offsetHeight;
+    body.style.animation = null;
+    body.style.animation = "red_answer 1s"
+}
+function right_answer(){
+    //alert("Juste")
+    body = document.getElementsByTagName('body')[0]
+    body.style.animation = 'none';
+    body.offsetHeight;
+    body.style.animation = null;
+    body.style.animation = "green_answer 1s"
+}
 
 function changer_texte(index,question,reponse_){
     q_nb = document.getElementById("question_number")
@@ -69,32 +85,53 @@ function reset_animation() {
     el.style.animation = null; 
 }
 
+function show_result() {
+    question_div = document.getElementById("show_and_hide")
+    question_div.style.display = "none"
 
-function rep1_click(index,question,reponse_) {
-    if (reponse_[index][2]===1){
-        //alert("Juste")
+    score = document.getElementById('score').innerHTML;
+    document.getElementById("score_result").innerHTML = score;
+
+    score_div = document.getElementById("hide_and_show")
+    score_div.style.display = "block"
+}
+
+
+function rep1_click(question,reponse_) {
+    ind = get_index()
+    if (reponse_[ind][2]===1){
+        right_answer()
         score = document.getElementById("score")
         old = Number(score.innerHTML) + 1
         score.innerHTML = old
     } else {
-        alert("Faux")
+        wrong_answer()
     }
-    ind = get_index()
-    set_index(ind + 1)
+    new_index = ind + 1
+    set_index(new_index)
+    if (new_index >= question.length) {
+        show_result()
+    }
     changer_texte(get_index(),question,reponse_)
     reset_animation()
 }
-function rep2_click(index,question,reponse_) {
-    if (reponse_[index][2]===2){
-        //alert("Juste")
+function rep2_click(question,reponse_) {
+    ind = get_index()
+    
+    if (reponse_[ind][2]===2){
+        right_answer()
         score = document.getElementById("score")
         old = Number(score.innerHTML) + 1
         score.innerHTML = old
     } else {
-        alert("Faux")
+        wrong_answer()
     }
-    ind = get_index()
-    set_index(ind + 1)
+    
+    new_index = ind + 1
+    set_index(new_index)
+    if (new_index >= question.length) {
+        show_result()
+    }
     changer_texte(get_index(),question,reponse_)
     reset_animation()
 }

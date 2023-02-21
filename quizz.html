@@ -7,23 +7,42 @@
     <header>
     </header>
     <body>
-        <div id="grid_question">
-            <div id="question">
-                <h1><span class="q_span">Q</span><span class="q_span">u</span><span class="q_span">e</span><span class="q_span">s</span><span class="q_span">t</span><span class="q_span">i</span><span class="q_span">o</span><span class="q_span">n</span> <span class="q_span" id="question_number">1</span></h1>
-                <h3 id="question_phrase">En quel année est né Haussman</h3>
-                <p id="score">0</p>
-            </div>
-            <div id="rep1">
-                <button class="button-89 bt_anim" role="button" id="rep1_bt" onclick="rep1_click(index,question,reponse_)"><span>Il est né en 1800</span></button>
-            </div>
-            <div id="rep2">
-                <div id="image1">
-                    <img id="ornement" class="bt_anim" src="img/ornement1.png">
+        <div id="show_and_hide">
+            <div id="grid_question">
+                <div id="question">
+                    <h1><span class="q_span">Q</span><span class="q_span">u</span><span class="q_span">e</span><span class="q_span">s</span><span class="q_span">t</span><span class="q_span">i</span><span class="q_span">o</span><span class="q_span">n</span> <span class="q_span" id="question_number">1</span></h1>
+                    <h3 id="question_phrase">En quel année est né Haussman</h3>
+                    <p id="score">0</p>
                 </div>
-                <button class="button-89 bt_anim" role="button" id="rep2_bt" onclick="rep2_click(index,question,reponse_)"><span>Il est né en 1800</span></button>
+                <div id="rep1">
+                    <button class="button-89 bt_anim" role="button" id="rep1_bt" onclick="rep1_click(question,reponse_)"><span>Il est né en 1800</span></button>
+                </div>
+                <div id="rep2">
+                    <div id="image1">
+                        <img id="ornement" class="bt_anim" src="img/ornement1.png">
+                    </div>
+                    <button class="button-89 bt_anim" role="button" id="rep2_bt" onclick="rep2_click(question,reponse_)"><span>Il est né en 1800</span></button>
+                </div>
             </div>
         </div>
         <h1 id="index" style="font-size: 0px;">0</h1>
+        <div id="hide_and_show">
+            <div id="centrer_div">
+                <div id="resultat">
+                    <h1>Résultat</h1>
+                    <div>
+                        <img id="haussmann_gg" src="img/haussmann1.jpg">
+                    </div>
+                    <h2>Vous avez un score de <span id="score_result">0</span> au quizz sur Haussman !</h2>
+                    <button class="rv_bt" id="rv_bt1" onclick="bt_biographie();">Biographie</button>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
+<script>
+    function bt_biographie() {
+        location.href='biographie.html';    
+    }
+</script>
 <script src="js/quizz.js"></script>
