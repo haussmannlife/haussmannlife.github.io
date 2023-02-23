@@ -3,12 +3,17 @@
     <head>
         <title>Biographie Haussmann</title>
         <link rel="stylesheet" href="css/biographie.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     </head>
     <header>
     </header>
     <body>
+        <br><br>
         <div id="grid_container">
-            <h1>Georges Eugène Haussmann</h1>
+            <h1 id="name_"><span class="title_span">G</span><span class="title_span">e</span><span class="title_span">o</span><span class="title_span">r</span><span class="title_span">g</span><span class="title_span">e</span><span class="title_span">s</span>
+                <span class="title_span"> </span><span class="title_span">E</span><span class="title_span">u</span><span class="title_span">g</span><span class="title_span">è</span><span class="title_span">n</span><span class="title_span">e</span>
+                <span class="title_span"> </span><span class="title_span">H</span><span class="title_span">a</span><span class="title_span">u</span><span class="title_span">s</span><span class="title_span">s</span><span class="title_span">m</span><span class="title_span">a</span><span class="title_span">n</span><span class="title_span">n</span>
+            </h1>
             <div id="img1">
                 <div id="picture1_tt">
                     <img src="img/haussmann2_rmbg.png" id="picture1_front">
@@ -17,15 +22,38 @@
                     </div>
                 </div>
             </div>
-            <p id="p1">Georges Eugène Haussmann nait à Paris le 27 mars 1809. Brillant étudiant, il entre dans l’administration préfectorale, où il fait toute sa carrière. Il se marie à Octavie de Laharpe en 1838, et avec laquelle il a deux filles : Valentine et Henriette. 
-            Il devient préfet du Var en 1849, de l’Yonne en 1850, et de la Gironde en novembre 1851 où il montre des qualités d’administrateur et de conseiller. Il est nommé préfet de Seine le 23 juin 1853 par l’Empereur Napoléon III. 
-            </p>
+            <div class="paragraphe" id="pp1">
+                <div class="justifier">
+                    <p id="p1">Georges Eugène Haussmann nait à Paris le 27 mars 1809. Brillant étudiant, il entre dans l’administration préfectorale, où il fait toute sa carrière. Il se marie à Octavie de Laharpe en 1838, et avec laquelle il a deux filles : Valentine et Henriette. 
+                    <br><br>Il devient préfet du Var en 1849, de l’Yonne en 1850, et de la Gironde en novembre 1851 où il montre des qualités d’administrateur et de conseiller. Il est nommé préfet de Seine le 23 juin 1853 par l’Empereur Napoléon III. 
+                    </p>
+                </div>
+            </div>
             <div id="img2">
                 <img id="paris_plan" src="img/paris1.jpg">
             </div>
-            <p id="p2">Au milieu du XIXe siècle, le centre historique de Paris se présente à peu près sous le même aspect qu'au Moyen-Age : les rues y sont encore étroites, peu éclairées et insalubres. Ainsi, en juin 1953, Napoléon III lui donne pour mission de rénover Paris. Les travaux haussmanniens vont profondement modifier la capitale avec notamment des travaux d’assaisinemment et d’embellissement. 
-            En 1877, il devient député de Corse et siège dans le groupe bonapartiste, fonction qu'il occupe jusqu'en 1881. Georges Eugène Haussmann meurt en 1891, il est enterré à Paris au cimetière du Père-Lachaise. Aujourd’hui encore, Haussmann est célèbre pour la réorganisation urbaine de Paris qu'il modifie à hauteur de 60 %. 
-           </p>
+            <div class="paragraphe" id="pp2">
+                <div class="justifier">
+                    <p id="p2">Au milieu du XIXe siècle, le centre historique de Paris se présente à peu près sous le même aspect qu'au Moyen-Age : les rues y sont encore étroites, peu éclairées et insalubres. Ainsi, en juin 1953, Napoléon III lui donne pour mission de rénover Paris. Les travaux haussmanniens vont profondement modifier la capitale avec notamment des travaux d’assaisinemment et d’embellissement. 
+                    <br><br>En 1877, il devient député de Corse et siège dans le groupe bonapartiste, fonction qu'il occupe jusqu'en 1881. Georges Eugène Haussmann meurt en 1891, il est enterré à Paris au cimetière du Père-Lachaise. Aujourd’hui encore, Haussmann est célèbre pour la réorganisation urbaine de Paris qu'il modifie à hauteur de 60 %. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+
+        <div id="image_area">
+            <h1 id="tttt"></h1>
+            <div class="container" id="img_compare1">
+                <div class="image before" style="background-image:url('img/ParisBefore1.png');"></div>
+                <div class="image after" style="background-image:url('img/ParisAfter1.png');"></div>
+                
+                <input type="range" class="slider" min="1" max="100" value="50" />
+                <div class="slider-button"></div>
+            </div>
         </div>
     </body>
 </html>
+
+<script src="js/biographie.js"></script>
