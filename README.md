@@ -13,5 +13,7 @@ https://haussmannlife.github.io/main.html
 ## Sources :
 
 https://www.larousse.fr/encyclopedie/personnage/Georges_Eug%C3%A8ne_baron_Haussmann/123312
+
 https://www.paris.fr/pages/haussmann-l-homme-qui-a-transforme-paris-23091
+
 https://www.universalis.fr/encyclopedie/georges-eugene-haussmann/
