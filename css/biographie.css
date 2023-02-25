@@ -7,6 +7,9 @@ font-family: 'Gloock', serif;
 font-family: 'Roboto Slab', serif;
 font-family: 'Noto Sans Bamum', sans-serif;
 */
+::-webkit-scrollbar {
+    display: none;
+}
 *{
     margin: 0%;
     padding: 0%;
@@ -217,6 +220,15 @@ p {
     text-justify: inter-word;
 }
 
+.firstpicture {
+    animation: img3_anim_appear 2s forwards;
+    animation-delay: 6.5s; /* ANIMATION IMAGE COMPARATEUR SLIDER */
+}
+.secondpicture {
+    animation: img3_anim_appear 2s forwards;
+    animation-delay: 6s;
+}
+
 div.container {
 	width: 600px;
     height: 350px;
@@ -224,8 +236,7 @@ div.container {
 	margin: 20px;
     margin-left: -300px;
     opacity: 0;
-    animation: img3_anim_appear 2s forwards;
-    animation-delay: 3s;
+    
 }
 @keyframes img3_anim_appear {
     0% {
@@ -248,7 +259,7 @@ div.image {
 }
 
 div.before {
-	width: 50%;
+	width: 80%;
 	z-index: 2;
 }
 
@@ -284,7 +295,7 @@ input.slider::-moz-range-thumb {
 
 input.slider::-webkit-slider-thumb {
 	width: 5px;
-	height: 530px;
+	height: 350px;
 	background-color: white;
 	cursor: pointer;
 	appearance: none;
@@ -301,7 +312,7 @@ div.slider-button {
 	background-color: white;
 	position: absolute;
 	top: calc(50% - 18px);
-	left: calc(50% - 18px);
+	left: calc(80% - 18px);
 	cursor: pointer;
 	z-index: 3;
 }

@@ -3,10 +3,22 @@
     <head>
         <title>Biographie Haussmann</title>
         <link rel="stylesheet" href="css/biographie.css">
+        <link rel="stylesheet" href="css/biographie_timeline.css">
+        <link rel="stylesheet" href="css/biographie_context.css">
+        <link rel="stylesheet" href="css/header.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     </head>
     <header>
+        <nav>
+            <ul class="lien_nav">
+                <li><a href="main.html">Accueil</a></li>
+                <li><a href="biographie.html">Biographie</a></li>
+                <li><a href="quizz.html">Quizz</a></li>
+            </ul>
+        </nav>
+        <a class="bouton_nav" href="#"><button id="bt_head">Sources</button></a>
     </header>
+    <br>
     <body>
         <br><br>
         <div id="grid_container">
@@ -45,15 +57,135 @@
 
         <div id="image_area">
             <h1 id="tttt"></h1>
-            <div class="container" id="img_compare1">
+            <div class="container firstpicture" id="img_compare1">
                 <div class="image before" style="background-image:url('img/ParisBefore1.png');"></div>
                 <div class="image after" style="background-image:url('img/ParisAfter1.png');"></div>
                 
-                <input type="range" class="slider" min="1" max="100" value="50" />
+                <input type="range" class="slider" min="1" max="100" value="80" />
                 <div class="slider-button"></div>
             </div>
         </div>
+
+        <br>
+        
+        <div class="timeline" id="timeline_id">
+            <div class="container_tl left-container">
+                <img src="img/naissance.png">
+                <div class="text-box">
+                    <h2>Naissance</h2>
+                    <small>27 Mars 1809</small>
+                    <p>Georges Eugène Haussmann naît à Paris le 27 mars 1809.
+                    </p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+    
+            <div class="container_tl right-container">
+                <img src="img/mariage.png">
+                <div class="text-box">
+                    <h2>Mariage</h2>
+                    <small>1838</small>
+                    <p>Il se marie avec Octavie de Laharpe (et a 2 filles : Valentine et Henriette)
+                    </p>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+    
+            <div class="container_tl left-container">
+                <img src="img/prefet.png">
+                <div class="text-box">
+                    <h2>Préfet de la Seine</h2>
+                    <small>23 Juin 1853</small>
+                    <p>Louis Napoléon Bonapart, ou Napoléon III, confie à Haussmann la rénovation de la capitale française. En effet, les rues sont étroites, surpeuplées et peu circulables.
+                    </p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+    
+            <div class="container_tl right-container">
+                <img src="img/depute.png">
+                <div class="text-box">
+                    <h2>Député de Corse</h2>
+                    <small>1877</small>
+                    <p>Le barron haussman siède dans un groupe bonapartiste de Corse.
+                    </p>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container_tl left-container">
+                <img src="img/mort.png">
+                <div class="text-box">
+                    <h2>Mort</h2>
+                    <small>1891</small>
+                    <p>George Eugène Haussmann meurt et il est enterré à Paris au cimetière du Père-Lachaise
+                    </p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div id="image_area">
+            <h1 id="tttt"></h1>
+            <div class="container herepicture" id="img_compare1">
+                <div class="image before" style="background-image:url('img/ParisBefore2.png');"></div>
+                <div class="image after" style="background-image:url('img/ParisAfter2.png');"></div>
+                
+                <input type="range" class="slider" min="1" max="100" value="80" />
+                <div class="slider-button"></div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+           
+        <div id="grey_bg">
+            <div class="center_align">
+                <div id="context_politique">
+                    <div id="div1">
+                        <h1 class="retroshadow" id="titre_retro">Context</h1>
+                    </div>
+                    <div>
+                        <img id="napoleon" src="img/napoleonIII.png">
+                    </div>
+                    <div id="div2">
+                        <p>
+                            Après avoir effectué un coup d’Etat et réussi à se proclamer Empereur, Napoléon III confie à Haussmann la rénovation de la capitale française. Au milieu du XIXe siècle, le centre historique de Paris se présente à peu près sous le même aspect qu'au Moyen-Age. En effet, la ville est insalubre et dangereuse. Les rues sont étroites, surpeuplées et peu circulables. Napoléon III remarque un contraste fort entre l’Etat de Londres où il y vit un certain temps et Paris. À Londres, les avenues sont grandes, la ville est belle et vivante alors qu’en France, la capitale reste bien plus fade. 
+                            <br><br>C’est cette constatation qui pousse alors Napoléon III à faire rénover Paris et entrainer les travaux Haussmaniens. La mission est d’aérer, sainifier et embellir la ville.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="center_align">
+                <div id="construction">
+                    <div id="div3">
+                        <h1 class="retroshadow2" id="titre_retro">Construction</h1>
+                    </div>
+                    <div id="construction_img">
+                        <img  src="img/haussmann_construction.png">
+                    </div>
+                    <div id="div4">
+                        <p>
+                            - 20 000 immeubles ont été détruit pour en construire 40 000
+                            <br>- 600 kilomètres d'égouts ont été installés 
+                            <br>- Travaux durent 16 ans et 6 mois
+                            <br>- Élargie les rues existantes et en créé de nouvelles
+                            <br>-  Il développe les deux axes du plan romain dont le tracé existait encore : la voie nord-sud (cardo) avec l'axe des rues Saint-Martin et Saint-Jacques, et l'est-ouest (decumanus) avec les rues Saint-Antoine et de Rivoli. 
+                            <br><br>
+                            Haussmann a recours à des emprunts massifs pour trouver l'argent nécessaire à ces opérations, soit de 50 à 80 millions de francs par an. À partir de 1858, la Caisse des travaux de Paris est l'outil privilégié du financement. L'État récupère l'argent emprunté en revendant le nouveau terrain sous forme de lots séparés à des promoteurs qui doivent construire de nouveaux immeubles en se conformant à un cahier des charges précis. Ce système permet de consacrer chaque année aux travaux une somme deux fois plus élevée que le budget municipal. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>  
     </body>
 </html>
-
+<script>
+xCoord=0
+yCoord=0
+window.scrollTo(xCoord, yCoord);
+</script>
 <script src="js/biographie.js"></script>

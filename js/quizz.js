@@ -1,13 +1,31 @@
 
 const question=[
     "En quel année est né Haussmann",
-    "Combien de quartier a t il rénové",
-    "Ses travaux ont durés"
+    "Avec qui se marie-t-il",
+    "Il est nommé préfet de la Seine par",
+    "Les Travaux débutent",
+    "Combien d'immeubles sont détruits",
+    "Ses travaux ont durés",
+    "Les rues sont",
+    "Combien de km d'égouts sont installés",
+    "Le cout annuel s'élève à",
+    "Au final, il construit",
+    "Haussman meurt en",
+    "Au final, il modifie Paris à hauteur de"
 ]
 const reponse_=[
-    ["1867", "1844",1], //[REP1, REP2, BONNE_REPONSE]
-    ["3 quartiers", "Tout Paris",2],
-    ["Longtemps","Je sais pas wesh",2]
+    ["1821", "1809",2], //[REP1, REP2, BONNE_REPONSE]
+    ["Octavie", "Marie", 1],
+    ["Napoléon I", "Napoléon III",2],
+    ["Juin 1843", "Juin 1853", 2],
+    ["20000", "5400",1],
+    ["3 jours","16ans et 6mois",2],
+    ["Elargies", "Nettoyées", 1],
+    ["600km", "30km", 1],
+    ["10 Million", "50-80 Million",2],
+    ["40000 immeubles", "10000 immeubles", 1],
+    ["1891", "1871",1],
+    ["30%", "60%",2]
 ]
 
 function get_index(){

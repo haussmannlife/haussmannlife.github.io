@@ -1,0 +1,145 @@
+#titre_retro {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 55px;
+    padding: 80px 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+} 
+.retroshadow {
+      color: #2c2c2c;
+      background-color: #f3f3f3;
+      letter-spacing: .05em;
+      text-shadow: 
+        4px 4px 0px #f3f3f3, 
+        7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+.apparition_animation_info {
+    animation: apparition_info 4s forwards;
+}
+
+#grey_bg {
+    background-color: #f3f3f3;  
+    opacity: 0;
+}
+@keyframes apparition_info {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.center_align {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /*background: green;*/
+    background: #f3f3f3;
+}
+
+#context_politique {
+    background: #f3f3f3;
+    width:100%;
+    max-width: 1200px;
+    display: grid;
+    row-gap: -20px;
+    column-gap: 20px;
+    /*background: red;*/
+}
+
+#napoleon {
+    width: 300px;
+    padding: 40px;
+    border-radius: 25%;
+}
+
+#div1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start:1;
+    grid-column-end: 3; 
+}
+#napoleon {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start:1;
+    grid-column-end: 2; 
+}
+#div2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3; 
+}
+
+#div2 {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+#div2 p {
+    text-align: justify;
+    text-justify: inter-word;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 20px;
+}
+
+
+.retroshadow2 {
+    color: #2c2c2c;
+    background-color: #f3f3f3;
+    letter-spacing: .05em;
+    text-shadow: 
+      4px 4px 0px #f3f3f3, 
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+#construction {
+
+    background: #f3f3f3;
+    width:100%;
+    max-width: 1200px;
+    display: grid;
+    row-gap: 0px;
+    column-gap: 20px;
+}
+
+#construction_img img {
+    width: 300px;
+    height: 200px;
+    padding: 40px;
+    border-radius: 25%;
+}
+
+#div3 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start:1;
+    grid-column-end: 3; 
+}
+#construction_img {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start:1;
+    grid-column-end: 2;
+}
+#div4 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3; 
+}
+#div4 p {
+    text-align: justify;
+    text-justify: inter-word;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
