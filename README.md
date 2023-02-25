@@ -8,7 +8,7 @@ Le site à été entièrement réalisé à la main :
 
 ## Accéder au site :
 
-https://haussmannlife.github.io/main.html
+[https://haussmannlife.github.io/main.html](https://haussmannlife.github.io/main.html)
 
 ## Sources :
 
