@@ -337,3 +337,11 @@ div.slider-button:after {
     display: grid;
     grid-template-columns: 50% 50%;
 }
+
+@media only screen  and (max-device-width: 480px) {
+
+    p {
+        font-size: 40px;
+    }
+
+}

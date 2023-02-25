@@ -45,3 +45,10 @@ header {
 #bt_head:hover {
     background-color: rgba(0,136,169,0.8);
 }
+
+@media only screen  and (max-device-width: 480px) {
+
+    li, a, #bt_head {
+        font-size: 30px;
+    }
+}

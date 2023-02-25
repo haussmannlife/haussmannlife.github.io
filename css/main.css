@@ -96,3 +96,13 @@ li, a, button {
     transition: all 0.3s ease 0s;
 }
 
+@media only screen  and (max-device-width: 480px) {
+
+    li, a, #bt_head {
+        font-size: 30px;
+    }
+    .texte h1 {
+        font-size: 100px;
+    }
+}
+

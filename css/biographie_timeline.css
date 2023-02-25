@@ -125,7 +125,7 @@
 }
 
 
-@media screen and (max-width: 600px) {
+@media only screen  and (max-device-width: 480px) {
     .timeline{
         margin: 50px auto;
     }
@@ -142,6 +142,7 @@
     }
     .text-box small {
         margin-bottom: 10px;
+        font-size: 40px;
     }
     .right-container {
         left: 0
@@ -155,3 +156,4 @@
         left: -15px;
     }
 }
+
